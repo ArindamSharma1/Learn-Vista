@@ -116,7 +116,7 @@
 }
 
 .socialIcon:hover {
-    color: #fff;
+    color: var(--color-primary);
 }
 
 @media (max-width: 900px) {

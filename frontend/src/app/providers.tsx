@@ -2,21 +2,14 @@
 
 import { ThemeProvider } from "next-themes";
 import { useEffect, useState } from "react";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 export function Providers({ children }: { children: React.ReactNode }) {
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) {
-        return <>{children}</>;
-    }
-
     return (
-        <ThemeProvider defaultTheme="dark" attribute="data-theme">
-            {children}
+        <ThemeProvider defaultTheme="light" attribute="data-theme">
+            <LanguageProvider>
+                {children}
+            </LanguageProvider>
         </ThemeProvider>
     );
 }

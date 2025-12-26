@@ -1,28 +1,36 @@
 "use client";
+import { Shield, Users, Monitor, LifeBuoy } from 'lucide-react';
 import React from 'react';
 import styles from './Features.module.css';
 import { motion } from 'framer-motion';
-
-const features = [
-    {
-        title: "Customise your learning experience",
-        desc: "With a wide range of inbuilt features, plugins, and integrations at your disposal, you can create any course or learning environment you envision with Learn Vista."
-    },
-    {
-        title: "Scale your platform to any size",
-        desc: "From small classrooms to large universities, global companies, and government departments, Learn Vista can be scaled to support organisations of all sizes."
-    },
-    {
-        title: "Safeguard your LMS data and systems",
-        desc: "As an open source platform, Learn Vista is committed to safeguarding data security, user privacy, and security controls. For complete control, Learn Vista can be easily deployed on a private secure cloud or server."
-    },
-    {
-        title: "Tap into specialist LMS support",
-        desc: "Get your LMS set up and serviced for you by a Learn Vista Certified Partner or Service Provider of your choice."
-    }
-];
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Features() {
+    const { t } = useLanguage();
+
+    const features = [
+        {
+            icon: <Monitor size={40} />,
+            title: t.advantages.customise.title,
+            desc: t.advantages.customise.desc
+        },
+        {
+            icon: <Users size={40} />,
+            title: t.advantages.scale.title,
+            desc: t.advantages.scale.desc
+        },
+        {
+            icon: <Shield size={40} />,
+            title: t.advantages.safeguard.title,
+            desc: t.advantages.safeguard.desc
+        },
+        {
+            icon: <LifeBuoy size={40} />,
+            title: t.advantages.support.title,
+            desc: t.advantages.support.desc
+        }
+    ];
+
     return (
         <div className={styles.section} id="whyus">
             <div className={styles.topContent}>
@@ -43,30 +51,36 @@ export default function Features() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className={styles.heading}>Learn Vista puts the power of eLearning in your hands</h2>
+                    <h2 className={styles.heading}>{t.advantages.heading}</h2>
                     <p className={styles.paragraph}>
-                        At Learn Vista, our mission is to empower educators to improve our world with our open source eLearning software.
+                        {t.advantages.p1}
                     </p>
                     <p className={styles.paragraph}>
-                        Flexible, secure, and customisable for any online teaching or training initiative, Learn Vista gives you the freedom to create an eLearning platform that best meets your needs.
+                        {t.advantages.p2}
                     </p>
                 </motion.div>
             </div>
 
-            <div className={styles.grid}>
-                {features.map((feature, index) => (
-                    <motion.div
-                        key={index}
-                        className={styles.card}
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: index * 0.1 }}
-                    >
-                        <h3 className={styles.cardTitle}>{feature.title}</h3>
-                        <p className={styles.cardText}>{feature.desc}</p>
-                    </motion.div>
-                ))}
+            <div className={styles.advantagesContainer}>
+                <h2 id="advantages" className={styles.sectionTitle}>{t.advantages.title}</h2>
+                <div className={styles.grid}>
+                    {features.map((feature, index) => (
+                        <motion.div
+                            key={index}
+                            className={styles.card}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                        >
+                            <div className={styles.cardHeader}>
+                                <div className={styles.iconWrapper}>{feature.icon}</div>
+                                <h3 className={styles.cardTitle}>{feature.title}</h3>
+                            </div>
+                            <p className={styles.cardText}>{feature.desc}</p>
+                        </motion.div>
+                    ))}
+                </div>
             </div>
         </div>
     );

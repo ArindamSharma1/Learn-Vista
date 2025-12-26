@@ -1,0 +1,226 @@
+.section {
+    padding: 100px 10%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--background);
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Right Side Text */
+.textContent {
+    flex: 1;
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+}
+
+.subHeading {
+    font-size: 20px;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description {
+    font-size: 16px;
+    color: var(--foreground);
+    opacity: 0.8;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Left Side Editor */
+.editorWrapper {
+    flex: 1;
+    perspective: 1000px;
+}
+
+.editorWindow {
+    background: #1e1e1e;
+    /* VS Code dark grey - specific design request: dark editor */
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    font-family: 'Fira Code', monospace;
+    /* Fallback monospace */
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.editorWindow:hover {
+    transform: translateY(-5px);
+}
+
+.editorHeader {
+    background: #252526;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+}
+
+.windowControls {
+    display: flex;
+    gap: 8px;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.control.red {
+    background: #ff5f56;
+}
+
+.control.yellow {
+    background: #ffbd2e;
+}
+
+.control.green {
+    background: #27c93f;
+}
+
+.fileName {
+    color: #ccc;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.editorBody {
+    padding: 20px;
+    position: relative;
+    color: #d4d4d4;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.lineNumber {
+    display: inline-block;
+    width: 20px;
+    color: #858585;
+    margin-right: 15px;
+    text-align: right;
+    user-select: none;
+}
+
+.codeLine {
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* Syntax Highlighting Colors (Mock) */
+.kw {
+    color: #569cd6;
+}
+
+/* Keyword */
+.str {
+    color: #ce9178;
+}
+
+/* String */
+.func {
+    color: #dcdcaa;
+}
+
+/* Function */
+.var {
+    color: #9cdcfe;
+}
+
+/* Variable */
+.num {
+    color: #b5cea8;
+}
+
+/* Number */
+.cls {
+    color: #4ec9b0;
+}
+
+/* Class/Type */
+.cmt {
+    color: #6a9955;
+}
+
+/* Comment */
+
+.compileButton {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #27c93f;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.2s;
+}
+
+.compileButton:hover {
+    background: #21a834;
+    transform: scale(1.05);
+}
+
+.outputArea {
+    background: #111;
+    border-top: 1px solid #333;
+    padding: 15px;
+    font-size: 13px;
+    color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.outputArea.visible {
+    max-height: 100px;
+    padding: 15px;
+    /* restore padding */
+}
+
+.outputSuccess {
+    color: #27c93f;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 960px) {
+    .container {
+        flex-direction: column-reverse;
+        /* Editor on bottom for mobile? Or Text top? User said Left Editor Right Text, implying Desktop */
+        /* Let's stack them: Editor first, then Text? Or Text then Editor? Usually Text first on mobile */
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .textContent {
+        text-align: center;
+    }
+}

@@ -91,7 +91,41 @@
 }
 
 .buttonSecondary:hover {
-    background: var(--foreground);
+    background: var(--color-primary);
     color: var(--background);
     border-color: var(--foreground);
+}
+
+.buttonOutline {
+    background: transparent;
+    color: var(--foreground);
+    border: 1px solid var(--foreground);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.8s ease, border-color 0.8s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttonOutline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--color-primary);
+    z-index: -1;
+    transition: width 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    /* Smooth eased slide */
+}
+
+.buttonOutline:hover {
+    color: #ffffff;
+    border-color: var(--color-primary);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(249, 128, 18, 0.2);
+}
+
+.buttonOutline:hover::before {
+    width: 100%;
 }

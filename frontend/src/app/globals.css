@@ -23,7 +23,6 @@
   --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
-/* The dark mode root variables are removed as per the instruction to replace default root variables with a project-specific palette. */
 
 html,
 body {

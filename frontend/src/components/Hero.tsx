@@ -6,9 +6,11 @@ import Orb from './Orb';
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Hero() {
     const { theme } = useTheme();
+    const { t } = useLanguage();
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
@@ -35,10 +37,10 @@ export default function Hero() {
                 transition={{ duration: 0.8 }}
             >
                 <h1 className={styles.headline}>
-                    Online learning <br /> delivered your way
+                    {t.hero.headline}
                 </h1>
                 <p className={styles.subheadline}>
-                    Join hundreds of thousands of educators and trainers on Learn Vista.
+                    {t.hero.subheadline}
                 </p>
                 <div className={styles.buttonGroup}>
                     <motion.a
@@ -47,7 +49,7 @@ export default function Hero() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        Get Started
+                        {t.hero.getStarted}
                     </motion.a>
                     <motion.a
                         href="#whyus"
@@ -55,7 +57,7 @@ export default function Hero() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        Learn More
+                        {t.hero.learnMore}
                     </motion.a>
                 </div>
             </motion.div>

@@ -5,9 +5,13 @@ import { ChevronDown, Linkedin, Instagram } from "lucide-react"
 import styles from "./Navbar.module.css"
 import { motion } from "framer-motion"
 import ThemeToggle from "./ThemeToggle"
+import LanguageSwitcher from "./LanguageSwitcher"
+
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false)
+    const { t } = useLanguage();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -33,23 +37,24 @@ export default function Navbar() {
                 Learn<span> Vista</span>
             </div>
             <ul className={styles.navLinks}>
-                <li className={styles.navItem}><Link href="/" className={styles.link}>Home</Link></li>
-                <li className={styles.navItem}><Link href="/about" className={styles.link}>About</Link></li>
+                <li className={styles.navItem}><Link href="/" className={styles.link}>{t.nav.home}</Link></li>
+                <li className={styles.navItem}><Link href="/about" className={styles.link}>{t.nav.about}</Link></li>
                 <li className={styles.navItem}>
                     <span className={styles.link} style={{ cursor: 'pointer' }}>
-                        Solution <ChevronDown size={16} />
+                        {t.nav.solution} <ChevronDown size={16} />
                     </span>
                     <div className={styles.dropdown}>
-                        <Link href="/login" className={styles.dropdownItem}>Learn vista</Link>
-                        <Link href="#advantages" className={styles.dropdownItem}>Advantages</Link>
-                        <Link href="#faq" className={styles.dropdownItem}>FAQ</Link>
+                        <Link href="/login" className={styles.dropdownItem}>{t.nav.login}</Link>
+                        <Link href="#advantages" className={styles.dropdownItem}>{t.nav.advantages}</Link>
+                        <Link href="#faq" className={styles.dropdownItem}>{t.nav.faq}</Link>
                     </div>
                 </li>
-                <li className={styles.navItem}><Link href="#whyus" className={styles.link}>Why Us</Link></li>
-                <li className={styles.navItem}><Link href="/contact" className={styles.link}>Contact us</Link></li>
+                <li className={styles.navItem}><Link href="#whyus" className={styles.link}>{t.nav.whyUs}</Link></li>
+                <li className={styles.navItem}><Link href="/contact" className={styles.link}>{t.nav.contact}</Link></li>
             </ul>
 
             <div className={styles.socials}>
+                <LanguageSwitcher />
                 <ThemeToggle />
                 <motion.a href="https://linkedin.com" target="_blank" className={styles.socialIcon} whileHover={{ scale: 1.2, rotate: 12 }}>
                     <Linkedin size={20} />

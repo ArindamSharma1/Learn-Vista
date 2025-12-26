@@ -20,6 +20,7 @@ export const metadata: Metadata = {
 };
 
 import { Providers } from "./providers";
+import Navbar from "@/components/Navbar";
 
 export default function RootLayout({
   children,
@@ -27,9 +28,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${montserrat.variable} ${roboto.variable}`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );
