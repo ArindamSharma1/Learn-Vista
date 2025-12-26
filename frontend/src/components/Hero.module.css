@@ -1,0 +1,97 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.content {
+    position: relative;
+    z-index: 10;
+    color: var(--foreground);
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    pointer-events: none;
+    /* Allow interaction with Orb behind */
+    transition: color 0.3s ease;
+}
+
+.headline {
+    font-size: 68px;
+    font-weight: 700;
+    color: var(--foreground);
+    line-height: 1.1;
+    margin-bottom: 24px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s ease;
+}
+
+:global([data-theme='light']) .headline {
+    background: linear-gradient(135deg, #141d28 0%, #4a5568 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subheadline {
+    font-size: 22px;
+    color: var(--foreground);
+    opacity: 0.8;
+    margin-bottom: 48px;
+    max-width: 650px;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 24px;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 16px 38px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    pointer-events: auto;
+    /* Re-enable clicks on buttons */
+}
+
+.buttonPrimary {
+    background: var(--foreground);
+    color: var(--background);
+    border: 1px solid var(--foreground);
+}
+
+.buttonPrimary:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.buttonSecondary {
+    background: transparent;
+    color: var(--foreground);
+    border: 1px solid var(--foreground);
+}
+
+.buttonSecondary:hover {
+    background: var(--foreground);
+    color: var(--background);
+    border-color: var(--foreground);
+}
