@@ -1,0 +1,175 @@
+.section {
+    padding: 100px 10%;
+    background: var(--background);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background Gradients Removed */
+
+.content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(249, 128, 18, 0.1);
+    color: var(--color-primary);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.heading {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--foreground);
+    letter-spacing: -1px;
+}
+
+.subheading {
+    font-size: 18px;
+    opacity: 0.7;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Comparison Layout */
+.comparisonGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    padding: 40px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+}
+
+.cardIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background: rgba(249, 128, 18, 0.1);
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .cardIcon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.cardTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: var(--foreground);
+}
+
+.comparisonRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+:global([data-theme='light']) .comparisonRow {
+    border-top-color: rgba(0, 0, 0, 0.05);
+}
+
+.usSide {
+    text-align: left;
+    flex: 1;
+}
+
+.divider {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--foreground);
+    opacity: 0.3;
+    padding: 0 15px;
+}
+
+.themSide {
+    text-align: right;
+    flex: 1;
+    opacity: 0.5;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.usLabel {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.usValue {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--foreground);
+}
+
+/* Light Mode Card Overrides */
+:global([data-theme='light']) .card {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 80px 5%;
+    }
+
+    .heading {
+        font-size: 36px;
+    }
+
+    .comparisonRow {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .themSide {
+        text-align: left;
+        margin-top: 4px;
+    }
+}
