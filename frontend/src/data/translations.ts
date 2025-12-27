@@ -5,6 +5,7 @@ export const translations = {
             about: "About",
             solution: "Solution",
             whyUs: "Why Us",
+            pricing: "Pricing",
             contact: "Contact us",
             login: "Learn vista",
             advantages: "Advantages",
@@ -119,10 +120,64 @@ export const translations = {
             }
         },
         getStarted: {
-            heading: "Start Your Learning Journey Today",
+            heading: "Start Your Journey Today",
             subheading: "Everything you need to create, manage, and scale your online learning platform.",
+            benefits: [
+                "Open Source Core",
+                "Enterprise Grade Security",
+                "24/7 Dedicated Support"
+            ],
             primaryButton: "Start for Free",
             secondaryButton: "View Pricing"
+        },
+        pricingPage: {
+            heading: "Simple, Transparent Pricing",
+            subheading: "Choose the plan that fits your teaching needs. No hidden fees.",
+            monthly: "Monthly",
+            yearly: "Yearly",
+            save: "Save 20%",
+            tiers: {
+                starter: {
+                    name: "Starter",
+                    price: "Free",
+                    desc: "Perfect for individual tutors just starting out.",
+                    button: "Start for Free",
+                    features: [
+                        "Unlimited Courses",
+                        "Up to 50 Students",
+                        "Basic Quizzes & Assignments",
+                        "Community Support",
+                        "Standard Analytics"
+                    ]
+                },
+                pro: {
+                    name: "Professional",
+                    price: "$29",
+                    period: "/month",
+                    desc: "Everything growing schools need to scale.",
+                    button: "Get Started",
+                    features: [
+                        "Unlimited Students",
+                        "AI Auto-Grading & Feedback",
+                        "Integrated Code Compiler",
+                        "Custom Domain Support",
+                        "Priority Email Support"
+                    ]
+                },
+                business: {
+                    name: "Enterprise",
+                    price: "Custom",
+                    desc: "For universities and large organizations.",
+                    button: "Contact Sales",
+                    features: [
+                        "Everything in Professional",
+                        "White-label Branding",
+                        "SSO & SAML Integration",
+                        "Dedicated Cloud Instance",
+                        "24/7 Priority Phone Support"
+                    ]
+                }
+            }
         },
         contactSection: {
             badge: "GET IN TOUCH",
@@ -259,8 +314,62 @@ export const translations = {
         getStarted: {
             heading: "Comienza Tu Viaje de Aprendizaje Hoy",
             subheading: "Todo lo que necesitas para crear, gestionar y escalar tu plataforma de aprendizaje.",
+            benefits: [
+                "Núcleo de Código Abierto",
+                "Seguridad de Grado Empresarial",
+                "Soporte Dedicado 24/7"
+            ],
             primaryButton: "Empieza Gratis",
             secondaryButton: "Ver Precios"
+        },
+        pricingPage: {
+            heading: "Precios Simples y Transparentes",
+            subheading: "Elige el plan que se adapte a tus necesidades. Sin tarifas ocultas.",
+            monthly: "Mensual",
+            yearly: "Anual",
+            save: "Ahorra 20%",
+            tiers: {
+                starter: {
+                    name: "Inicial",
+                    price: "Gratis",
+                    desc: "Perfecto para tutores individuales que recién comienzan.",
+                    button: "Empieza Gratis",
+                    features: [
+                        "Cursos Ilimitados",
+                        "Hasta 50 Estudiantes",
+                        "Cuestionarios Básicos",
+                        "Soporte Comunitario",
+                        "Analíticas Estándar"
+                    ]
+                },
+                pro: {
+                    name: "Profesional",
+                    price: "$29",
+                    period: "/mes",
+                    desc: "Todo lo que las escuelas en crecimiento necesitan.",
+                    button: "Empezar",
+                    features: [
+                        "Estudiantes Ilimitados",
+                        "Auto-Calificación con IA",
+                        "Compilador de Código Integrado",
+                        "Dominio Personalizado",
+                        "Soporte Prioritario por Email"
+                    ]
+                },
+                business: {
+                    name: "Empresarial",
+                    price: "Personalizado",
+                    desc: "Para universidades y grandes organizaciones.",
+                    button: "Contactar Ventas",
+                    features: [
+                        "Todo en Profesional",
+                        "Marca Blanca",
+                        "Integración SSO y SAML",
+                        "Instancia en la Nube Dedicada",
+                        "Soporte 24/7 por Teléfono"
+                    ]
+                }
+            }
         },
         contactSection: {
             badge: "CONTÁCTENOS",
@@ -281,6 +390,7 @@ export const translations = {
             about: "À propos",
             solution: "Solution",
             whyUs: "Pourquoi nous",
+            pricing: "Tarifs",
             contact: "Contactez-nous",
             login: "Learn vista",
             advantages: "Avantages",
@@ -397,8 +507,62 @@ export const translations = {
         getStarted: {
             heading: "Commencez Votre Voyage d'Apprentissage Aujourd'hui",
             subheading: "Tout ce dont vous avez besoin pour créer, gérer et faire évoluer votre plateforme.",
+            benefits: [
+                "Cœur Open Source",
+                "Sécurité de Niveau Entreprise",
+                "Support Dédié 24/7"
+            ],
             primaryButton: "Commencer Gratuitement",
             secondaryButton: "Voir les Tarifs"
+        },
+        pricingPage: {
+            heading: "Tarification Simple et Transparente",
+            subheading: "Choisissez le plan adapté à vos besoins. Pas de frais cachés.",
+            monthly: "Mensuel",
+            yearly: "Annuel",
+            save: "Économisez 20%",
+            tiers: {
+                starter: {
+                    name: "Démarrage",
+                    price: "Gratuit",
+                    desc: "Parfait pour les tuteurs individuels.",
+                    button: "Commencer Gratuitement",
+                    features: [
+                        "Cours Illimités",
+                        "Jusqu'à 50 Étudiants",
+                        "Quiz de Base",
+                        "Support Communautaire",
+                        "Analytique Standard"
+                    ]
+                },
+                pro: {
+                    name: "Professionnel",
+                    price: "29 €",
+                    period: "/mois",
+                    desc: "Tout ce dont les écoles en croissance ont besoin.",
+                    button: "Commencer",
+                    features: [
+                        "Étudiants Illimités",
+                        "Correction Auto par IA",
+                        "Compilateur de Code Intégré",
+                        "Domaine Personnalisé",
+                        "Support Email Prioritaire"
+                    ]
+                },
+                business: {
+                    name: "Entreprise",
+                    price: "Sur Mesure",
+                    desc: "Pour les universités et grandes organisations.",
+                    button: "Contacter les Ventes",
+                    features: [
+                        "Tout dans Professionnel",
+                        "Marque Blanche",
+                        "Intégration SSO & SAML",
+                        "Instance Cloud Dédiée",
+                        "Support Téléphonique 24/7"
+                    ]
+                }
+            }
         },
         contactSection: {
             badge: "CONTACTEZ-NOUS",
@@ -419,6 +583,7 @@ export const translations = {
             about: "हमारे बारे में",
             solution: "समाधान",
             whyUs: "हम ही क्यों",
+            pricing: "मूल्य निर्धारण",
             contact: "संपर्क करें",
             login: "Learn vista",
             advantages: "फायदे",
@@ -535,8 +700,62 @@ export const translations = {
         getStarted: {
             heading: "आज ही अपनी सीखने की यात्रा शुरू करें",
             subheading: "ऑनलाइन शिक्षण मंच बनाने, प्रबंधित करने और बढ़ाने के लिए आपको जो कुछ भी चाहिए।",
+            benefits: [
+                "ओपन सोर्स कोर",
+                "एंटरप्राइज ग्रेड सुरक्षा",
+                "24/7 समर्पित समर्थन"
+            ],
             primaryButton: "मुफ्त में शुरू करें",
             secondaryButton: "मूल्य निर्धारण देखें"
+        },
+        pricingPage: {
+            heading: "सरल, पारदर्शी मूल्य निर्धारण",
+            subheading: "वह योजना चुनें जो आपकी आवश्यकताओं के अनुरूप हो। कोई छिपी हुई फीस नहीं।",
+            monthly: "मासिक",
+            yearly: "वार्षिक",
+            save: "20% बचाएं",
+            tiers: {
+                starter: {
+                    name: "शुरुआती",
+                    price: "मुफ़्त",
+                    desc: "व्यक्तिगत ट्यूटर्स के लिए बिल्कुल सही।",
+                    button: "मुफ्त में शुरू करें",
+                    features: [
+                        "असीमित पाठ्यक्रम",
+                        "50 छात्रों तक",
+                        "बुनियादी प्रश्नोत्तरी",
+                        "समुदाय समर्थन",
+                        "मानक एनालिटिक्स"
+                    ]
+                },
+                pro: {
+                    name: "पेशेवर",
+                    price: "₹2499",
+                    period: "/माह",
+                    desc: "बढ़ते स्कूलों के लिए सब कुछ।",
+                    button: "शुरू करें",
+                    features: [
+                        "असीमित छात्र",
+                        "AI ऑटो-ग्रेडिंग",
+                        "एकीकृत कोड कंपाइलर",
+                        "कस्टम डोमेन",
+                        "प्राथमिकता ईमेल समर्थन"
+                    ]
+                },
+                business: {
+                    name: "उद्यम",
+                    price: "कस्टम",
+                    desc: "विश्वविद्यालयों और बड़े संगठनों के लिए।",
+                    button: "बिक्री से संपर्क करें",
+                    features: [
+                        "पेशेवर में सब कुछ",
+                        "व्हाइट-लेबल ब्रांडिंग",
+                        "SSO और SAML एकीकरण",
+                        "समर्पित क्लाउड इंस्टेंस",
+                        "24/7 प्राथमिकता फोन समर्थन"
+                    ]
+                }
+            }
         },
         contactSection: {
             badge: "संपर्क करें",

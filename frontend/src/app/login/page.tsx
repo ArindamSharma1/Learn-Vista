@@ -1,12 +1,9 @@
 import React from 'react';
 import styles from './login.module.css';
 import Link from 'next/link';
-import Navbar from '@/components/Navbar';
-
 export default function Login() {
     return (
         <>
-            <Navbar />
             <div className={styles.container}>
                 <div className={styles.card}>
                     <h1 className={styles.title}>Welcome Back</h1>

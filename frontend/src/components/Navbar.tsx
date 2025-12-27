@@ -33,8 +33,8 @@ export default function Navbar() {
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <div className={styles.logo} href="/">
-                Learn<span> Vista</span>
+            <div className={styles.logo}>
+                <Link href="/#home">Learn<span> Vista</span></Link>
             </div>
             <ul className={styles.navLinks}>
                 <li className={styles.navItem}><Link href="/#home" className={styles.link}>{t.nav.home}</Link></li>
@@ -49,6 +49,7 @@ export default function Navbar() {
                         <Link href="#faq" className={styles.dropdownItem}>{t.nav.faq}</Link>
                     </div>
                 </li>
+                <li className={styles.navItem}><Link href="/pricing" className={styles.link}>{t.nav.pricing}</Link></li>
                 <li className={styles.navItem}><Link href="#whyus" className={styles.link}>{t.nav.whyUs}</Link></li>
                 <li className={styles.navItem}><Link href="/#contact" className={styles.link}>{t.nav.contact}</Link></li>
             </ul>
@@ -56,10 +57,10 @@ export default function Navbar() {
             <div className={styles.socials}>
                 <LanguageSwitcher />
                 <ThemeToggle />
-                <motion.a href="https://linkedin.com" target="_blank" className={styles.socialIcon} whileHover={{ scale: 1.2, rotate: 12 }}>
+                <motion.a href="https://www.linkedin.com/in/arindam-sharma-ab4712251/" target="_blank" className={styles.socialIcon} whileHover={{ scale: 1.2, rotate: 12 }}>
                     <Linkedin size={20} />
                 </motion.a>
-                <motion.a href="https://instagram.com" target="_blank" className={styles.socialIcon} whileHover={{ scale: 1.2, rotate: 12 }}>
+                <motion.a href="https://www.instagram.com/arindam._.sharma/" target="_blank" className={styles.socialIcon} whileHover={{ scale: 1.2, rotate: 12 }}>
                     <Instagram size={20} />
                 </motion.a>
             </div>

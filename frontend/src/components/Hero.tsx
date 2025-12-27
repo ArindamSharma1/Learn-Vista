@@ -44,7 +44,7 @@ export default function Hero() {
                 </p>
                 <div className={styles.buttonGroup}>
                     <motion.a
-                        href="#signup"
+                        href="#get-started"
                         className={`${styles.button} ${styles.buttonPrimary}`}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}

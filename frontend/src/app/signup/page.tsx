@@ -1,12 +1,9 @@
 import React from 'react';
 import styles from './signup.module.css';
 import Link from 'next/link';
-import Navbar from '@/components/Navbar';
-
 export default function Signup() {
     return (
         <>
-            <Navbar />
             <div className={styles.container}>
                 <div className={styles.card}>
                     <h1 className={styles.title}>Create Account</h1>

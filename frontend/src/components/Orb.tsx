@@ -15,7 +15,7 @@ interface OrbProps {
 export default function Orb({
   hue = 0,
   hoverIntensity = 0.18,
-  rotateOnHover = true,
+  rotateOnHover = false,
   forceHoverState = false,
   backgroundColor = '#000000'
 }: OrbProps) {
@@ -238,7 +238,7 @@ export default function Orb({
     let targetHover = 0;
     let lastTime = 0;
     let currentRot = 0;
-    const rotationSpeed = 0.3;
+    const rotationSpeed = 0.1;
 
     const handleMouseMove = (e: MouseEvent) => {
       const rect = container.getBoundingClientRect();
