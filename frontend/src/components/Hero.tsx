@@ -20,7 +20,7 @@ export default function Hero() {
     const orbBgColor = mounted && theme === 'light' ? '#F5F5F5' : '#141d28';
 
     return (
-        <div className={styles.hero}>
+        <div className={styles.hero} id="home">
             <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
                 <Orb
                     hoverIntensity={0.80}

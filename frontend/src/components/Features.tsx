@@ -32,7 +32,7 @@ export default function Features() {
     ];
 
     return (
-        <div className={styles.section} id="whyus">
+        <div className={styles.section}>
             <div className={styles.topContent}>
                 <motion.div
                     className={styles.imageContainer}

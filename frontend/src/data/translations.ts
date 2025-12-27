@@ -16,6 +16,25 @@ export const translations = {
             getStarted: "Get Started",
             learnMore: "Learn More"
         },
+        aboutPage: {
+            heroTitle: "Empowering the World to Learn",
+            heroDesc: "We believe education is the key to unlocking human potential. Our mission is to make high-quality learning accessible, engaging, and effective for everyone, everywhere.",
+            missionTitle: "Our Mission",
+            missionDesc: "To democratize education through open-source technology, fostering a global community of life-long learners and innovative educators.",
+            offeringTitle: "What We Offer",
+            offering1Title: "Global Accessibility",
+            offering1Desc: "Access courses from anywhere, in your native language, on any device.",
+            offering2Title: "Community Driven",
+            offering2Desc: "Join a vibrant network of educators and learners supporting each other.",
+            offering3Title: "Cutting-Edge Tech",
+            offering3Desc: "Utilize advanced tools like our integrated code editor and real-time collaboration.",
+            statsTitle: "Our Impact",
+            stat1Label: "Active Learners",
+            stat2Label: "Courses Available",
+            stat3Label: "Countries Reached",
+            teamTitle: "Who We Are",
+            teamDesc: "We are a diverse team of educators, developers, and designers passionate about the future of learning."
+        },
         advantages: {
             title: "Advantages",
             customise: {
@@ -52,6 +71,70 @@ export const translations = {
             heading: "Learn in your language",
             description: "Education knows no borders. Learn Vista supports 50+ languages instantly, making learning accessible to everyone, everywhere.",
             button: "Explore Languages"
+        },
+        footer: {
+            brandDesc: "Empowering educators to improve our world.",
+            product: "Product",
+            company: "Company",
+            resources: "Resources",
+            features: "Features",
+            showcase: "Showcase",
+            pricing: "Pricing",
+            about: "About",
+            whyUs: "Why Us",
+            contact: "Contact",
+            blog: "Blog",
+            community: "Community",
+            help: "Help Center",
+            newsletter: "Subscribe to our newsletter",
+            emailPlaceholder: "Enter your email",
+            subscribe: "Subscribe",
+            rights: "All rights reserved."
+        },
+        whyChooseUs: {
+            badge: "VS TRADITIONAL LMS",
+            heading: "Why Choose Learn Vista?",
+            subheading: "See how we stack up against traditional Moodle platforms.",
+            points: {
+                ui: {
+                    title: "User Interface",
+                    us: "Modern, User Friendly, Intuitive",
+                    them: "Cluttered, Outdated, Confusing"
+                },
+                ai: {
+                    title: "Artificial Intelligence",
+                    us: "AI-Powered Adaptive Learning & Grading",
+                    them: "Basic Manual Tools Only"
+                },
+                dev: {
+                    title: "Developer Tools",
+                    us: "Integrated IDE & 20+ Language Compiler",
+                    them: "No Native Coding Environment"
+                },
+                deploy: {
+                    title: "Deployment",
+                    us: "Cloud-Native & Scalable",
+                    them: "Complex On-Premise Setup"
+                }
+            }
+        },
+        getStarted: {
+            heading: "Start Your Learning Journey Today",
+            subheading: "Everything you need to create, manage, and scale your online learning platform.",
+            primaryButton: "Start for Free",
+            secondaryButton: "View Pricing"
+        },
+        contactSection: {
+            badge: "GET IN TOUCH",
+            heading: "Let's Start a Conversation",
+            subheading: "Ready to transform your eLearning experience? Reach out to our team.",
+            form: {
+                name: "Full Name",
+                email: "Email Address",
+                subject: "Subject",
+                message: "Message",
+                button: "Send Message"
+            }
         }
     },
     es: {
@@ -70,6 +153,25 @@ export const translations = {
             subheadline: "Únete a cientos de miles de educadores y formadores en Learn Vista.",
             getStarted: "Empezar",
             learnMore: "Saber más"
+        },
+        aboutPage: {
+            heroTitle: "Empoderando al mundo para aprender",
+            heroDesc: "Creemos que la educación es la clave para desbloquear el potencial humano. Nuestra misión es hacer que el aprendizaje de alta calidad sea accesible.",
+            missionTitle: "Nuestra Misión",
+            missionDesc: "Democratizar la educación a través de tecnología de código abierto, fomentando una comunidad global.",
+            offeringTitle: "Lo que ofrecemos",
+            offering1Title: "Accesibilidad Global",
+            offering1Desc: "Accede a cursos desde cualquier lugar, en tu idioma nativo.",
+            offering2Title: "Impulsado por la comunidad",
+            offering2Desc: "Únete a una red vibrante de educadores y estudiantes.",
+            offering3Title: "Tecnología de vanguardia",
+            offering3Desc: "Utiliza herramientas avanzadas como nuestro editor de código integrado.",
+            statsTitle: "Nuestro Impacto",
+            stat1Label: "Estudiantes Activos",
+            stat2Label: "Cursos Disponibles",
+            stat3Label: "Países Alcanzados",
+            teamTitle: "Quiénes Somos",
+            teamDesc: "Somos un equipo diverso apasionado por el futuro del aprendizaje."
         },
         advantages: {
             title: "Ventajas",
@@ -107,6 +209,70 @@ export const translations = {
             heading: "Aprende en tu idioma",
             description: "La educación no conoce fronteras. Learn Vista admite más de 50 idiomas al instante, haciendo que el aprendizaje sea accesible para todos, en todas partes.",
             button: "Explorar Idiomas"
+        },
+        footer: {
+            brandDesc: "Empoderando a los educadores para mejorar nuestro mundo.",
+            product: "Producto",
+            company: "Empresa",
+            resources: "Recursos",
+            features: "Características",
+            showcase: "Galería",
+            pricing: "Precios",
+            about: "Nosotros",
+            whyUs: "Por qué nosotros",
+            contact: "Contacto",
+            blog: "Blog",
+            community: "Comunidad",
+            help: "Centro de ayuda",
+            newsletter: "Suscríbete a nuestro boletín",
+            emailPlaceholder: "Introduce tu correo",
+            subscribe: "Suscribirse",
+            rights: "Todos los derechos reservados."
+        },
+        whyChooseUs: {
+            badge: "VS LMS TRADICIONAL",
+            heading: "¿Por qué elegir Learn Vista?",
+            subheading: "Vea cómo nos comparamos con las plataformas Moodle tradicionales.",
+            points: {
+                ui: {
+                    title: "Interfaz de Usuario",
+                    us: "Moderna, Glassmórfica, Intuitiva",
+                    them: "Desordenado, Anticuado, Confuso"
+                },
+                ai: {
+                    title: "Inteligencia Artificial",
+                    us: "Aprendizaje Adaptativo y Calificación con IA",
+                    them: "Herramientas Manuales Básicas"
+                },
+                dev: {
+                    title: "Herramientas de Desarrollo",
+                    us: "IDE Integrado y Compilador de 20+ Lenguajes",
+                    them: "Sin Entorno de Codificación Nativo"
+                },
+                deploy: {
+                    title: "Despliegue",
+                    us: "Nativo en la Nube y Escalable",
+                    them: "Configuración Local Compleja"
+                }
+            }
+        },
+        getStarted: {
+            heading: "Comienza Tu Viaje de Aprendizaje Hoy",
+            subheading: "Todo lo que necesitas para crear, gestionar y escalar tu plataforma de aprendizaje.",
+            primaryButton: "Empieza Gratis",
+            secondaryButton: "Ver Precios"
+        },
+        contactSection: {
+            badge: "CONTÁCTENOS",
+            heading: "Iniciemos una Conversación",
+            subheading: "¿Listo para transformar su experiencia de aprendizaje? Contáctenos.",
+            form: {
+                name: "Nombre Completo",
+                email: "Correo Electrónico",
+                subject: "Asunto",
+                message: "Mensaje",
+                button: "Enviar Mensaje"
+            }
         }
     },
     fr: {
@@ -126,11 +292,30 @@ export const translations = {
             getStarted: "Commencer",
             learnMore: "En savoir plus"
         },
+        aboutPage: {
+            heroTitle: "Donner au monde les moyens d'apprendre",
+            heroDesc: "Nous croyons que l'éducation est la clé pour libérer le potentiel humain. Notre mission est de rendre l'apprentissage accessible.",
+            missionTitle: "Notre Mission",
+            missionDesc: "Démocratiser l'éducation grâce à la technologie open source.",
+            offeringTitle: "Ce que nous offrons",
+            offering1Title: "Accessibilité mondiale",
+            offering1Desc: "Accédez aux cours de n'importe où, dans votre langue maternelle.",
+            offering2Title: "Axé sur la communauté",
+            offering2Desc: "Rejoignez un réseau dynamique d'éducateurs et d'apprenants.",
+            offering3Title: "Technologie de pointe",
+            offering3Desc: "Utilisez des outils avancés comme notre éditeur de code intégré.",
+            statsTitle: "Notre Impact",
+            stat1Label: "Apprenants Actifs",
+            stat2Label: "Cours Disponibles",
+            stat3Label: "Pays Atteints",
+            teamTitle: "Qui Sommes-Nous",
+            teamDesc: "Nous sommes une équipe diversifiée passionnée par l'avenir de l'apprentissage."
+        },
         advantages: {
             title: "Avantages",
             customise: {
                 title: "Personnalisez votre expérience d'apprentissage",
-                desc: "Avec un large éventail de fonctionnalités intégrées, de plugins et d'intégrations à votre disposition, vous pouvez créer n'importe quel cours ou environnement d'apprentissage."
+                desc: "Avec un large éventail de fonctionnalités intégrées, de plugins et d'intégrations à votre disposition, vous pouvez créer n'importe quel cours ou environnement deapprentissage."
             },
             scale: {
                 title: "Faites évoluer votre plateforme",
@@ -162,6 +347,70 @@ export const translations = {
             heading: "Apprenez dans votre langue",
             description: "L'éducation ne connaît pas de frontières. Learn Vista prend en charge plus de 50 langues instantanément.",
             button: "Explorer les langues"
+        },
+        footer: {
+            brandDesc: "Permettre aux éducateurs d'améliorer notre monde.",
+            product: "Produit",
+            company: "Entreprise",
+            resources: "Ressources",
+            features: "Fonctionnalités",
+            showcase: "Vitrine",
+            pricing: "Tarifs",
+            about: "À propos",
+            whyUs: "Pourquoi nous",
+            contact: "Contact",
+            blog: "Blog",
+            community: "Communauté",
+            help: "Centre d'aide",
+            newsletter: "Abonnez-vous à notre newsletter",
+            emailPlaceholder: "Entrez votre email",
+            subscribe: "S'abonner",
+            rights: "Tous droits réservés."
+        },
+        whyChooseUs: {
+            badge: "VS LMS TRADITIONNEL",
+            heading: "Pourquoi choisir Learn Vista ?",
+            subheading: "Voyez comment nous nous comparons aux plateformes Moodle traditionnelles.",
+            points: {
+                ui: {
+                    title: "Interface Utilisateur",
+                    us: "Moderne, Glassmorphique, Intuitive",
+                    them: "Encombré, Dépassé, Confus"
+                },
+                ai: {
+                    title: "Intelligence Artificielle",
+                    us: "Apprentissage Adaptatif et Notation IA",
+                    them: "Outils Manuels Basiques"
+                },
+                dev: {
+                    title: "Outils de Développement",
+                    us: "IDE Intégré & Compilateur 20+ Langages",
+                    them: "Pas d'Environnement de Code Natif"
+                },
+                deploy: {
+                    title: "Déploiement",
+                    us: "Cloud-Natif & Évolutif",
+                    them: "Configuration Sur Site Complexe"
+                }
+            }
+        },
+        getStarted: {
+            heading: "Commencez Votre Voyage d'Apprentissage Aujourd'hui",
+            subheading: "Tout ce dont vous avez besoin pour créer, gérer et faire évoluer votre plateforme.",
+            primaryButton: "Commencer Gratuitement",
+            secondaryButton: "Voir les Tarifs"
+        },
+        contactSection: {
+            badge: "CONTACTEZ-NOUS",
+            heading: "Commençons une Conversation",
+            subheading: "Prêt à transformer votre expérience eLearning ? Contactez notre équipe.",
+            form: {
+                name: "Nom Complet",
+                email: "Adresse Email",
+                subject: "Sujet",
+                message: "Message",
+                button: "Envoyer le Message"
+            }
         }
     },
     hi: {
@@ -180,6 +429,25 @@ export const translations = {
             subheadline: "Learn Vista पर लाखों शिक्षकों और प्रशिक्षकों के साथ जुड़ें।",
             getStarted: "शुरू करें",
             learnMore: "और जानें"
+        },
+        aboutPage: {
+            heroTitle: "दुनिया को सीखने के लिए सशक्त बनाना",
+            heroDesc: "हम मानते हैं कि शिक्षा मानव क्षमता को अनलॉक करने की कुंजी है। हमारा मिशन उच्च गुणवत्ता वाले सीखने को सुलभ बनाना है।",
+            missionTitle: "हमारा लक्ष्य",
+            missionDesc: "खुले स्रोत प्रौद्योगिकी के माध्यम से शिक्षा का लोकतंत्रीकरण करना।",
+            offeringTitle: "हम क्या प्रदान करते हैं",
+            offering1Title: "वैश्विक पहुंच",
+            offering1Desc: "कहीं से भी, अपनी मूल भाषा में पाठ्यक्रमों तक पहुंचें।",
+            offering2Title: "समुदाय संचालित",
+            offering2Desc: "शिक्षकों और शिक्षार्थियों के एक जीवंत नेटवर्क में शामिल हों।",
+            offering3Title: "अत्याधुनिक तकनीक",
+            offering3Desc: "हमारे एकीकृत कोड संपादक जैसे उन्नत उपकरणों का उपयोग करें।",
+            statsTitle: "हमारा प्रभाव",
+            stat1Label: "सक्रिय शिक्षार्थी",
+            stat2Label: "उपलब्ध पाठ्यक्रम",
+            stat3Label: "देशों तक पहुंच",
+            teamTitle: "हम कौन हैं",
+            teamDesc: "हम सीखने के भविष्य के बारे में भावुक शिक्षकों और डेवलपर्स की एक विविध टीम हैं।"
         },
         advantages: {
             title: "फायदे",
@@ -217,6 +485,70 @@ export const translations = {
             heading: "अपनी भाषा में सीखें",
             description: "शिक्षा की कोई सीमा नहीं होती। Learn Vista 50+ भाषाओं का तुरंत समर्थन करता है, जिससे सीखना सभी के लिए, हर जगह सुलभ हो जाता है।",
             button: "भाषाएं देखें"
+        },
+        footer: {
+            brandDesc: "शिक्षकों को हमारी दुनिया को बेहतर बनाने के लिए सशक्त बनाना।",
+            product: "उत्पाद",
+            company: "कंपनी",
+            resources: "संसाधन",
+            features: "विशेषताएं",
+            showcase: "प्रदर्शनी",
+            pricing: "मूल्य निर्धारण",
+            about: "हमारे बारे में",
+            whyUs: "हम ही क्यों",
+            contact: "संपर्क",
+            blog: "ब्लॉग",
+            community: "समुदाय",
+            help: "सहायता केंद्र",
+            newsletter: "हमारे न्यूज़लेटर की सदस्यता लें",
+            emailPlaceholder: "अपना ईमेल दर्ज करें",
+            subscribe: "सदस्यता लें",
+            rights: "सर्वाधिकार सुरक्षित।"
+        },
+        whyChooseUs: {
+            badge: "बनाम पारंपरिक LMS",
+            heading: "Learn Vista क्यों चुनें?",
+            subheading: "देखें कि हम पारंपरिक मूडल प्लेटफार्मों के मुकाबले कैसे हैं।",
+            points: {
+                ui: {
+                    title: "उपयोगकर्ता इंटरफ़ेस",
+                    us: "आधुनिक, ग्लासमोर्फिक, सहज",
+                    them: "अव्यवस्थित, पुराना, भ्रमित करने वाला"
+                },
+                ai: {
+                    title: "आर्टिफिशियल इंटेलिजेंस",
+                    us: "AI-संचालित अनुकूलन और ग्रेडिंग",
+                    them: "केवल बुनियादी मैनुअल उपकरण"
+                },
+                dev: {
+                    title: "डेवलपर टूल्स",
+                    us: "एकीकृत IDE और 20+ भाषा कंपाइलर",
+                    them: "कोई देशी कोडिंग वातावरण नहीं"
+                },
+                deploy: {
+                    title: "तैनाती",
+                    us: "क्लाउड-नेटिव और स्केलेबल",
+                    them: "जटिल ऑन-प्रिमाइसेस सेटअप"
+                }
+            }
+        },
+        getStarted: {
+            heading: "आज ही अपनी सीखने की यात्रा शुरू करें",
+            subheading: "ऑनलाइन शिक्षण मंच बनाने, प्रबंधित करने और बढ़ाने के लिए आपको जो कुछ भी चाहिए।",
+            primaryButton: "मुफ्त में शुरू करें",
+            secondaryButton: "मूल्य निर्धारण देखें"
+        },
+        contactSection: {
+            badge: "संपर्क करें",
+            heading: "आइए बात शुरू करें",
+            subheading: "क्या आप अपने ई-लर्निंग अनुभव को बदलने के लिए तैयार हैं? हमारी टीम से संपर्क करें।",
+            form: {
+                name: "पूरा नाम",
+                email: "ईमेल पता",
+                subject: "विषय",
+                message: "संदेश",
+                button: "संदेश भेजें"
+            }
         }
     }
 };

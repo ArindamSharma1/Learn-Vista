@@ -6,6 +6,9 @@ import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import CodeEditor from "@/components/CodeEditor";
 import LanguageShowcase from "@/components/LanguageShowcase";
+import WhyUs from "@/components/WhyUs";
+import GetStarted from "@/components/GetStarted";
+import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
   return (
@@ -14,6 +17,9 @@ export default function Home() {
       <Features />
       <CodeEditor />
       <LanguageShowcase />
+      <WhyUs />
+      <GetStarted />
+      <ContactSection />
       <Footer />
     </main>
   );

@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './Hero.module.css'; // Reuse Hero styles for consistent buttons/typography
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/context/LanguageContext';
+import Link from 'next/link';
 import { Globe, MessageCircle, Mic, Languages } from 'lucide-react';
 
 export default function LanguageShowcase() {
@@ -107,9 +108,11 @@ export default function LanguageShowcase() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
             >
-                <button className={`${styles.button} ${styles.buttonOutline}`}>
-                    {t.showcase.button}
-                </button>
+                <Link href="/languages">
+                    <button className={`${styles.button} ${styles.buttonOutline}`}>
+                        {t.showcase.button}
+                    </button>
+                </Link>
             </motion.div>
         </section>
     );

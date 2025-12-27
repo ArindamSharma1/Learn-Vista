@@ -33,11 +33,11 @@ export default function Navbar() {
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <div className={styles.logo}>
+            <div className={styles.logo} href="/">
                 Learn<span> Vista</span>
             </div>
             <ul className={styles.navLinks}>
-                <li className={styles.navItem}><Link href="/" className={styles.link}>{t.nav.home}</Link></li>
+                <li className={styles.navItem}><Link href="/#home" className={styles.link}>{t.nav.home}</Link></li>
                 <li className={styles.navItem}><Link href="/about" className={styles.link}>{t.nav.about}</Link></li>
                 <li className={styles.navItem}>
                     <span className={styles.link} style={{ cursor: 'pointer' }}>
@@ -50,7 +50,7 @@ export default function Navbar() {
                     </div>
                 </li>
                 <li className={styles.navItem}><Link href="#whyus" className={styles.link}>{t.nav.whyUs}</Link></li>
-                <li className={styles.navItem}><Link href="/contact" className={styles.link}>{t.nav.contact}</Link></li>
+                <li className={styles.navItem}><Link href="/#contact" className={styles.link}>{t.nav.contact}</Link></li>
             </ul>
 
             <div className={styles.socials}>
