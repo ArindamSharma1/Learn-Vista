@@ -52,7 +52,7 @@ export default function Hero() {
                         {t.hero.getStarted}
                     </motion.a>
                     <motion.a
-                        href="#whyus"
+                        href="/about"
                         className={`${styles.button} ${styles.buttonSecondary}`}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}

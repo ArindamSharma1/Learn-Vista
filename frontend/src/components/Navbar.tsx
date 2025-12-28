@@ -46,7 +46,7 @@ export default function Navbar() {
                     <div className={styles.dropdown}>
                         <Link href="/login" className={styles.dropdownItem}>{t.nav.login}</Link>
                         <Link href="#advantages" className={styles.dropdownItem}>{t.nav.advantages}</Link>
-                        <Link href="#faq" className={styles.dropdownItem}>{t.nav.faq}</Link>
+                        <Link href="/faq" className={styles.dropdownItem}>{t.nav.faq}</Link>
                     </div>
                 </li>
                 <li className={styles.navItem}><Link href="/pricing" className={styles.link}>{t.nav.pricing}</Link></li>

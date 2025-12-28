@@ -56,7 +56,7 @@ export default function Footer() {
                     <div className={styles.linkList}>
                         <Link href="#features" className={styles.link}>{t.footer.features}</Link>
                         <Link href="#showcase" className={styles.link}>{t.footer.showcase}</Link>
-                        <Link href="#" className={styles.link}>{t.footer.pricing}</Link>
+                        <Link href="/pricing" className={styles.link}>{t.footer.pricing}</Link>
                         <Link href="#" className={styles.link}>{t.nav.solution}</Link>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ export default function Footer() {
                 <div className={styles.column}>
                     <h4 className={styles.columnTitle}>{t.footer.resources}</h4>
                     <div className={styles.linkList}>
-                        <Link href="#" className={styles.link}>{t.footer.community}</Link>
+                        <Link href="/faq" className={styles.link}>{t.nav.faq}</Link>
                         <Link href="#" className={styles.link}>{t.footer.help}</Link>
                         <Link href="#" className={styles.link}>API Documentation</Link>
                     </div>

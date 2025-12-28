@@ -1,11 +1,19 @@
-"use client";
-
+import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import styles from "./Navbar.module.css";
 
 export default function ThemeToggle() {
     const { theme, setTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    if (!mounted) {
+        return null; // or a loading skeleton
+    }
 
     return (
         <button

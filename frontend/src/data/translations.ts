@@ -116,6 +116,16 @@ export const translations = {
                     title: "Deployment",
                     us: "Cloud-Native & Scalable",
                     them: "Complex On-Premise Setup"
+                },
+                safeExam: {
+                    title: "Safe Exam Browser",
+                    us: "Native Secure Environment Support",
+                    them: "Requires Complex 3rd Party Plugins"
+                },
+                content: {
+                    title: "Course Management",
+                    us: "Easy User-Created Courses & Quizzes",
+                    them: "Restricted Admin-Only Creation"
                 }
             }
         },
@@ -190,6 +200,32 @@ export const translations = {
                 message: "Message",
                 button: "Send Message"
             }
+        },
+        faqPage: {
+            heading: "Frequently Asked Questions",
+            subheading: "Got questions? We're here to help.",
+            questions: [
+                {
+                    q: "What is Learn Vista?",
+                    a: "Learn Vista is an open-source Learning Management System (LMS) designed to democratize education. It provides tools for educators to create, manage, and scale online courses with ease."
+                },
+                {
+                    q: "Is Learn Vista free to use?",
+                    a: "Yes! Our Starter plan is completely free and open-source. For larger institutions and advanced features, we offer affordable Pro and Enterprise tiers."
+                },
+                {
+                    q: "Can I host my own courses?",
+                    a: "Absolutely. Learn Vista gives you full control over your content. You can host text, video, quizzes, and even coding assignments directly on the platform."
+                },
+                {
+                    q: "Does it support multiple languages?",
+                    a: "Yes, Learn Vista supports over 50 languages. The interface facilitates real-time translation and localization to reach students globally."
+                },
+                {
+                    q: "How does the code editor work?",
+                    a: "Our integrated code editor supports 20+ programming languages. It allows students to write, run, and debug code directly within the browser without installing any external software."
+                }
+            ]
         }
     },
     es: {
@@ -308,6 +344,16 @@ export const translations = {
                     title: "Despliegue",
                     us: "Nativo en la Nube y Escalable",
                     them: "Configuración Local Compleja"
+                },
+                safeExam: {
+                    title: "Navegador de Examen Seguro",
+                    us: "Soporte Nativo de Entorno Seguro",
+                    them: "Requiere Plugins Complejos de Terceros"
+                },
+                content: {
+                    title: "Gestión de Cursos",
+                    us: "Fácil Creación de Cursos por Usuarios",
+                    them: "Creación Restringida a Administradores"
                 }
             }
         },
@@ -382,6 +428,32 @@ export const translations = {
                 message: "Mensaje",
                 button: "Enviar Mensaje"
             }
+        },
+        faqPage: {
+            heading: "Preguntas Frecuentes",
+            subheading: "¿Tienes dudas? Estamos aquí para ayudar.",
+            questions: [
+                {
+                    q: "¿Qué es Learn Vista?",
+                    a: "Learn Vista es un Sistema de Gestión de Aprendizaje (LMS) de código abierto diseñado para democratizar la educación. Ofrece herramientas para crear y gestionar cursos fácilmente."
+                },
+                {
+                    q: "¿Learn Vista es gratis?",
+                    a: "¡Sí! Nuestro plan Inicial es completamente gratuito. Para instituciones más grandes, ofrecemos planes Profesional y Empresarial asequibles."
+                },
+                {
+                    q: "¿Puedo alojar mis propios cursos?",
+                    a: "Absolutamente. Tienes control total. Puedes alojar texto, video, cuestionarios e incluso tareas de programación directamente en la plataforma."
+                },
+                {
+                    q: "¿Soporta múltiples idiomas?",
+                    a: "Sí, Learn Vista soporta más de 50 idiomas. La interfaz facilita la traducción en tiempo real para llegar a estudiantes de todo el mundo."
+                },
+                {
+                    q: "¿Cómo funciona el editor de código?",
+                    a: "Nuestro editor integrado soporta más de 20 lenguajes. Permite a los estudiantes escribir y ejecutar código directamente en el navegador."
+                }
+            ]
         }
     },
     fr: {
@@ -501,6 +573,16 @@ export const translations = {
                     title: "Déploiement",
                     us: "Cloud-Natif & Évolutif",
                     them: "Configuration Sur Site Complexe"
+                },
+                safeExam: {
+                    title: "Navigateur d'Examen Sécurisé",
+                    us: "Support Natif d'Environnement Sécurisé",
+                    them: "Nécessite des Plugins Tiers Complexes"
+                },
+                content: {
+                    title: "Gestion des Cours",
+                    us: "Création Facile par les Utilisateurs",
+                    them: "Création Restreinte aux Administrateurs"
                 }
             }
         },
@@ -575,6 +657,32 @@ export const translations = {
                 message: "Message",
                 button: "Envoyer le Message"
             }
+        },
+        faqPage: {
+            heading: "Foire Aux Questions",
+            subheading: "Des questions ? Nous sommes là pour aider.",
+            questions: [
+                {
+                    q: "Qu'est-ce que Learn Vista ?",
+                    a: "Learn Vista est un LMS open source conçu pour démocratiser l'éducation. Il fournit des outils pour créer, gérer et faire évoluer des cours en ligne."
+                },
+                {
+                    q: "Est-ce gratuit ?",
+                    a: "Oui ! Notre plan de démarrage est gratuit. Pour les grandes institutions, nous proposons des niveaux Professionnel et Entreprise."
+                },
+                {
+                    q: "Puis-je héberger mes propres cours ?",
+                    a: "Absolument. Vous avez un contrôle total. Hébergez du texte, de la vidéo, des quiz et même des devoirs de codage directement sur la plateforme."
+                },
+                {
+                    q: "Prend-il en charge plusieurs langues ?",
+                    a: "Oui, plus de 50 langues sont prises en charge. L'interface facilite la traduction en temps réel pour atteindre les étudiants du monde entier."
+                },
+                {
+                    q: "Comment fonctionne l'éditeur de code ?",
+                    a: "Notre éditeur intégré prend en charge plus de 20 langages. Il permet d'écrire et d'exécuter du code directement dans le navigateur."
+                }
+            ]
         }
     },
     hi: {
@@ -694,6 +802,16 @@ export const translations = {
                     title: "तैनाती",
                     us: "क्लाउड-नेटिव और स्केलेबल",
                     them: "जटिल ऑन-प्रिमाइसेस सेटअप"
+                },
+                safeExam: {
+                    title: "सुरक्षित परीक्षा ब्राउज़र",
+                    us: "मूल सुरक्षित वातावरण समर्थन",
+                    them: "जटिल तृतीय-पक्ष प्लगइन्स की आवश्यकता"
+                },
+                content: {
+                    title: "पाठ्यक्रम प्रबंधन",
+                    us: "आसान उपयोगकर्ता-निर्मित पाठ्यक्रम",
+                    them: "केवल व्यवस्थापक निर्माण तक सीमित"
                 }
             }
         },
@@ -768,6 +886,32 @@ export const translations = {
                 message: "संदेश",
                 button: "संदेश भेजें"
             }
+        },
+        faqPage: {
+            heading: "अक्सर पूछे जाने वाले प्रश्न",
+            subheading: "क्या आपके पास कोई प्रश्न हैं? हम आपकी मदद के लिए यहां हैं।",
+            questions: [
+                {
+                    q: "Learn Vista क्या है?",
+                    a: "Learn Vista एक ओपन-सोर्स लर्निंग मैनेजमेंट सिस्टम (LMS) है जिसे शिक्षा को लोकतांत्रिक बनाने के लिए डिज़ाइन किया गया है।"
+                },
+                {
+                    q: "क्या Learn Vista उपयोग के लिए मुफ़्त है?",
+                    a: "हाँ! हमारा स्टार्टर प्लान पूरी तरह से मुफ़्त है। बड़े संस्थानों के लिए, हम किफायती प्रो और एंटरप्राइज़ स्तर प्रदान करते हैं।"
+                },
+                {
+                    q: "क्या मैं अपने स्वयं के पाठ्यक्रम होस्ट कर सकता हूं?",
+                    a: "बिल्कुल। Learn Vista आपको आपकी सामग्री पर पूर्ण नियंत्रण देता है। आप टेक्स्ट, वीडियो, क्विज़ और कोडिंग असाइनमेंट होस्ट कर सकते हैं।"
+                },
+                {
+                    q: "क्या यह कई भाषाओं का समर्थन करता है?",
+                    a: "हाँ, Learn Vista 50+ भाषाओं का समर्थन करता है। इंटरफ़ेस छात्रों तक पहुँचने के लिए वास्तविक समय अनुवाद की सुविधा प्रदान करता है।"
+                },
+                {
+                    q: "कोड एडिटर कैसे काम करता है?",
+                    a: "हमारा एकीकृत कोड एडिटर 20+ भाषाओं का समर्थन करता है। यह छात्रों को ब्राउज़र के भीतर सीधे कोड लिखने और चलाने की अनुमति देता है।"
+                }
+            ]
         }
     }
 };

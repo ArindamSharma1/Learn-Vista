@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './WhyUs.module.css';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/context/LanguageContext';
-import { Layout, BrainCircuit, Terminal, Cloud } from 'lucide-react';
+import { Layout, BrainCircuit, Terminal, Cloud, Shield, FileText } from 'lucide-react';
 
 export default function WhyUs() {
     const { t } = useLanguage();
@@ -28,6 +28,16 @@ export default function WhyUs() {
             icon: <Cloud size={32} />,
             key: 'deploy',
             data: t.whyChooseUs.points.deploy
+        },
+        {
+            icon: <Shield size={32} />,
+            key: 'safeExam',
+            data: (t.whyChooseUs.points as any).safeExam
+        },
+        {
+            icon: <FileText size={32} />,
+            key: 'content',
+            data: (t.whyChooseUs.points as any).content
         }
     ];
 
