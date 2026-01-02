@@ -234,6 +234,7 @@ export const translations = {
             about: "Nosotros",
             solution: "Solución",
             whyUs: "Por qué nosotros",
+            pricing: "Precios",
             contact: "Contacto",
             login: "Learn vista",
             advantages: "Ventajas",
