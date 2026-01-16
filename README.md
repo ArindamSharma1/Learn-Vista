@@ -25,4 +25,4 @@ LearnVista is a scalable, cloud-hosted Moodle implementation designed to break l
 * **Patent Recognition:** System architecture was selected for patent filing due to its unique approach to localized content delivery.
 
 ---
-[View Demo](#) • [Report Bug](#)
+[View Demo](https://learn-vista-xi.vercel.app/) • [Report Bug](mailto:arindamsharma693@gmail.com)
